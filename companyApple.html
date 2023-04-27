@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    
+    <!--  boostrap link  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  boostrap  icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <!-- css link  framework -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!--  css link  master -->
+    <link rel="stylesheet" href="./css/master.css">
+    <!--  normalize link -->
+    <link rel="stylesheet" href="./css/normalise.css">
+    <!--  all link   -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--  font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="page d-flex">
+
+        <div class="sidebar  mt-90  p-15  p-relative ">
+            <!--<h3  class="p-relative   text-center mt-0 pt-15" > 
+                <img src="./logo/logo/logo.png" class="one"   alt="">
+                <img src="../FRONT-END/imgs/logo (1)/logo/logo.png" class="two"  alt="">
+            </h3>-->
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li> </li>
+                </ul>
+            </div>
+            
+            <ul class="  list-none   mt-20">
+                <li>
+                    <a  class="active   d-flex  align-center  fs-20     rad-6  p-10 " href="index.html" >  
+                        <i class="fa-solid fa-chart-simple  fa-fw"></i>
+                        <span class="hide-mobile" > Dashboard </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class=" d-flex  align-center  fs-20    rad-6  p-10 " href="setting.html" >  
+                        <i class="fa-solid fa-gear fa-fw "></i>
+                        <span class="hide-mobile" > Setting </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20     rad-6  p-10 " href="profile.html" >  
+                        <i class="fa-regular fa-user  fa-fw"></i>
+                        <span class="hide-mobile"> Profile </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20     rad-6  p-10 " href="companys.html" >  
+                        <i class="fa-regular fa-building"></i>
+                        <span class="hide-mobile" > Companys </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20     rad-6  p-10 " href="LastNews.html" >  
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span class="hide-mobile" > LastNews </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20     rad-6  p-10 " href="Trending.html" >  
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <span class="hide-mobile" > Trending </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20    rad-6  p-10 " href="Chart.html" >  
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span class="hide-mobile" > Chart </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20    rad-6  p-10 " href="Community.html" >  
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="hide-mobile" > Education Com </span>
+                    </a>
+                </li>
+    
+            </ul>
+        </div> 
+    
+        <!-- start content  -->
+        <div class="content w-full  ">
+            <!--   start head  -->
+
+            <div class="head   fixed-top     between-flex   " style="padding:10px;">
+                <nav  style="padding: 7px;" class="navbar navbar-expand-lg stiky-top   fixed-top   bg-black  w-full  ">
+                    <div class="container ">
+                        <ul>
+                            <li>
+                                <a   class="btn btn-primary  newsidebar" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                    Fintec
+                                </a>
+                                <div>
+                                    <!-- <h2 style="margin-top: 17px;"> <span style="color:yellow;">Fin</span><span style="color:dodgerblue ;">tickers</span> </h2>
+                                    <img src="./images/logo (1)/logo/logo.png"  class="bg-black  logo p-relative" alt="">
+                                    </div> -->
+                            </li>
+                        
+                            <!-- <li>
+                                <div class="search mt-2 p-relative">
+                                    <span>  <div class="search  ps-3  pe-3  d-none   d-lg-block">
+                                    </div>  </span>
+                                    <input  class="p-10" type="search" name="search" id="search"  placeholder="search">
+                                </div>
+                            </li> -->
+                        </ul>
+                            <!--<div class="search  p-relative">
+                            <span>  <div class="search  ps-3  pe-3  d-none   d-lg-block">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </span>
+                            <input  class="p-10" type="search" name="search" id="search"  placeholder="search">
+                        </div>-->
+                        
+                        <button class="navbar-toggler  bg-eee" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon ">
+                                
+                            </span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li>
+                                    <!-- <nav class="navbar navbar-light bg-black ">
+                                        <div class="container-fluid">
+                                            <form class="d-flex  w-100">
+                                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-success" type="submit">Search</button>
+                                            </form>
+                                        </div>
+                                    </nav> -->
+                                </li>
+                                
+                                <li>
+                                    <div class="mr-10 mt-2 " >
+                                        <div class="dropdown ">
+                                            <button class="btn  btn-primary  rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Get start
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                                <li > <a class="dropdown-item between-flex active  fs-20" href="sign_up.html"> <i class="fa-regular fa-user"></i> <span> Sign up </span> </a> </li>
+                                                <li><a class="dropdown-item  d-flex  space-around  fs-20 " href="#"> 
+                                                    <span> MODE </span>
+                                                    <i class=" fs-20   bi bi-brightness-high-fill between-flex align-center  " id="toggleDark">   </i> 
+                                                    </a>
+                                                </li>
+                                                <li > <a class="dropdown-item between-flex active  fs-20" href="sign_in.html"> </a> </li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mr-10 mt-2 " >
+                                        <div class="dropdown ">
+                                            <button class="btn  btn-primary  rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Language
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                                <li > <a class="dropdown-item between-flex active  fs-20" href="#">  <span> English  </span> </a> </li>
+                                                <li > <a class="dropdown-item between-flex   fs-20" href="#">  <span> Arbic  </span> </a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="./sign_in.html" class="btn mr-10 mt-2 btn  btn-primary  rounded-pill"> Login </a>
+
+                                </li>
+                                <li>
+                                    <div class="icons  fs-20  d-flex  space-between">
+                                    
+                                        <div class=" p-relative mt-2  align-items-center   notification ">
+                                            <i class="fa-regular fa-bell fa-lg c-gray ">   </i>
+                                        </div>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+                <!--<div class="search  p-relative">
+                    <span> <i class="fa-sharp fa-solid fa-magnifying-glass"></i> </span>
+                    <input  class="p-10" type="search" name="search" id="search"  placeholder="search">
+                </div>-->
+                
+        </div>
+        <!--  end head -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+            <div class="wrapper   d-grid   gap-20">
+            
+            </div>
+
+            <button id="up"> Up </button>
+            <br>
+            <div class="companyContentChaned">
+                <div class="comanyDetails">
+                    <img src="./images/apple-logo-1656693488392.webp" width="50px" height="50px" style="border-radius: 50%;" alt="">
+                    <h3 class="d-flex" > Apple <span style="margin-left: 10px;"> (AAPL) </span>  </h3>
+
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            
+
+            <div class="  companyChange  pt-15">
+                <ul class="allEllement">
+                    <!--<li class="activee  community" data-cont=".finance-ideaContent  .education-ideaContent  .video-ideaContent"> Community  </li> -->
+                    <li class="OverView activee " data-cont=".OverViewContent" >  OverView </li>
+                    <li class="  finance " data-cont=".financeContent" > finance   </li>
+                    <li  class=" ComanyhistoryData" data-cont=".ComanyhistoryDataContent" > Comany history data  </li>
+                    <li  class=" companyNewes" data-cont=".companyNewesContent" > Technical  </li>
+                    <li  class=" testModel" data-cont=".testModelContent" > test Model  </li>
+                </ul>
+                <br>
+                <div class="theChildContent">
+                    <div class="OverViewContent">
+                        <br>
+                        <br>
+                    
+                        <h2 style="margin-left: 40px;"> Apple Chart > </h2>
+                        <br>
+                        <br>
+                    <!-- TradingView Widget BEGIN -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_411db"></div>
+                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL stock chart</span></a> by TradingView</div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget(
+                        {
+                        "width": 980,
+                        "height": 610,
+                        "symbol": "NASDAQ:AAPL",
+                        "interval": "D",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "1",
+                        "locale": "en",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "allow_symbol_change": true,
+                        "container_id": "tradingview_411db"
+                    }
+                        );
+                        </script>
+                    </div>
+                    <!-- TradingView Widget END -->
+
+
+                    <div class="ComanyhistoryDataContent">
+                        <ul class="companyContent " style=" padding: 10px; margin: 5px; ">
+                            <label for="select"> choose year </label>
+                            <select style="width: 120px; margin-left: 10px;" name="" id="">
+                                <option value="2022"> 2022 </option>
+                                <option value=""> 2021 </option>
+                                <option value=""> 2020 </option>
+                                <option value=""> 2019 </option>
+                                <option value=""> 2018 </option>
+                                <option value=""> 2017 </option>
+                                <option value=""> 2016 </option>
+                                <option value=""> 2015 </option>
+                                <option value=""> 2014 </option>
+                                <option value=""> 2013 </option>
+                                <option value=""> 2012 </option>
+                                <option value=""> 2011 </option>
+                                <option value=""> 2010 </option>
+                                <option value=""> 2009 </option>
+                                <option value=""> 2008 </option>
+                                <option value=""> 2007 </option>
+                                <option value=""> 2006 </option>
+                                <option value=""> 2005 </option>
+                                <option value=""> 2004 </option>
+                                <option value=""> 2003 </option>
+                                <option value=""> 2002 </option>
+                                <option value=""> 2001 </option>
+                                <option value=""> 2000 </option>
+                                <option value=""> 1999 </option>
+                                <option value=""> 1998 </option>
+                                <option value=""> 1997 </option>
+                                <option value=""> 1996 </option>
+                                <option value=""> 1995 </option>
+                                <option value=""> 1994 </option>
+                                <option value=""> 1993 </option>
+                                <option value=""> 1992 </option>
+                                <option value=""> 1991 </option>
+                                <option value=""> 1991 </option>
+                                <option value=""> 1990 </option>
+                                <option value=""> 1989 </option>
+                                <option value=""> 1988 </option>
+                                <option value=""> 1987 </option>
+                                <option value=""> 1986 </option>
+                                <option value=""> 1985 </option>
+                            </select>
+                            <br>
+                            <br>
+                        </ul>
+                    </div>
+                    <h2 style="margin-left: 40px ; margin-top: 50px;  margin-bottom:30px;"> Tesla history </h2>
+                    
+                        <div class="appleData  ">
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  1971: The Beginning </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/M7VWY6FD3RONWGJCOZVTHZV7SE.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Co-founders Steve Jobs and Steve Wozniak first met when they were 20 years old through a mutual friend, Bill Fernandez — who became Apple's first employee. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1976: Launch  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/MJCGH65Q6RPZXHUMMDYUUAQBUU.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Jobs and Wozniak officially founded Apple Computers, Inc. and unveiled the Apple I. They hand-build 50 Apple I's and decided to sell them for $666.66. The vintage computer only had 4KB of RAM, which is 2,000,000 times less than a standard computer today. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1977: The Second Generation  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/VZQMEUQ5OOYSQKKZPOJW4QFKLA.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Apple officially became incorporated in January, then publicly released the Apple II in June, which was the first personal computer for the mass market. That same year, Michael Scott became the president of the company. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1978: Floppy Disks  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/Floppy_disk_2009_G1.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> The tech giant took a break from releasing computers and released the Apple Disk II, which was an external floppy-disk drive. The floppy disk was more expensive than what a gaming console costs in 2016. The Apple Disk had an introductory price of $495, but it was then raised to $595. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  1980: The Third Generation </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/third_generation.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> After a two-year hiatus from releasing products, Apple unveiled the Apple III computer in May. Then in December, the company went public by offering 4.6 million shares at $22 each — now a valuation of approximately $1.8 billion. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1981: Jobs Becomes Chairman   </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/SteveJobs1981_Inline_27850.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Jobs became chairman and Mike Markkula became president. Then in September the company introduced the ProFile hard disk — a 5MB mass storage system that seems like nothing compared to today's storage system capacity. Too put it into perspective, 5MB would be one page of "a" letters, which is about 3,696 characters. </p>
+                                    </div>
+                            </div>
+
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  1982: Printers </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/126d380237677e9d42bd261dbf7bd570--macs-steve-jobs.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Apple continued releasing new products by introducing the Dot Matrix, which was a printer that hooked up to the Apple II, III series and eventually, the Lisa. It cost $699 and printed 70 lines per minute.  </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1984: The Iconic Commercial  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <iframe width="500" height="300" src="https://www.youtube.com/embed/2zfqw8nhUwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> The Macintosh was introduced to the world during the Super Bowl. The minute-long clip became one of the most iconic commercials to date. The commercial evoked George Orwell's dystopian novel of the same name and featured a woman freeing the masses from the PC. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  1985: Jobs Exits </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/steve_jobs_630px.webp" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Jobs left Apple to work on his own computer, the NeXT, which had a disappointing debut in 1988. The computer was a black cube that looked stylish, but did not appeal to many. </p>
+                                    </div>
+                            </div>
+
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1990-1993: Change in Leadership  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Apple saw a big change in leadership during the early '90s. Michael Spindler became president in 1990, then became the CEO in 1993 — the same year Sculley became a chairman. Then in October of that year, Sculley resigned and was replaced by Mike Markkula. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1997: The Founder Returns  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Jobs returns to Apple, but as an adviser. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 1997: Interim CEO  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/Apple-Steve-Jobs-1280x720.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;">Because of some conflict with the board and Jobs, Amelio resigned in July. Jobs then became the interim CEO in September — he would call himself iCEO.  </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  1997: Alliance </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/UNMJTC2HKQENLAKCH2GA4HMFGM.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Jobs decided to change around a lot of things at the company in order to make it successful once again. One of those changes was creating a five-year technology alliance with Microsoft in order to have the Office software on the Mac.
+
+                                        </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2000: Officially CEO  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Jobs officially became the CEO of Apple. This is when the co-founder decided to start delving into music. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  2001: Tunes, OS X and the iPod </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/EHMI3C35VVS4IV6ULLVE46X3O4.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> It was the new millennium and the start of Apple's huge success. In 2001, the company introduced iTunes, OS X (the software we still use) and the iPod, which is considered one of the company's biggest accomplishments. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  2002: Computers Go Flat </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> The iMac was known for its bulgy and colorful backs, but in 2002, Apple redesigned its computers by introducing the flat-paneled G4 iMac. It looked like a flat screen mounted on top of a sphere. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2003: New Software  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> The iLife suite was released, which includes iPhoto, iMovie, iTunes and Safari — apps we still use in 2016. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2003: Cross-platform  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> With the debut of the iTunes Store, Apple decided to make its music software compatible with competing Windows computers. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  2004: iTunes Goes Global </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Apple introduced the iPod mini the same year it launched iTunes in France, Germany and the UK. It was also the first year that the iPod got its first color screen. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2005: Smaller Products  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Smaller phones were trending in the early 2000s, so naturally Apple made its own products smaller and released the Mac mini and the iPod shuffle — an iPod without a screen. Later that year it introduced the iPod Nano, which was also a small, colorful iPod but with a screen.  </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2006: Intel-based Computers  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/WHO4UOZXGQ7GC2XBN3NDC27GPQ.jpg" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> iPhone 8 The phones come in 4.7-inch and 5.5-inch Retina HD displays, are available in silver, space grey, and a 'blush gold,' have a 12 megapixel sensor, and come with new photo filters. The iPhone 8 will start at $699 for 64GB and $799 for the 8Plus. Pre-ordering begins on September 15 and the phones will be available on September 22. (Justin Sullivan/Getty Images) </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2007: Apple Makes a Phone </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> The iPod was a great innovation, but the iPhone is what really changed the company. In 2007, Jobs introduced the smartphone to the world and decided to change the company's name to just Apple, Inc. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2008: Thinner Products </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Smaller products weren't enough for Apple, so it started making them thinner. The MacBook Air was introduced in January and was considered the thinnest laptop at the time. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">2010: Tablets  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Because a computer is too big, and a smartphone is too small, Apple decided to develop a tablet that would serve as the perfect in-between. The iPad quickly became a fan favorite because it was a portable theatre, book library, game console and a web browser all in one. </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2011: Hello, Siri </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/ID5FDOF6HITPIYDMHGANYJVT4E.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> After three curved iPhone models Apple decided to redesign the iPhone in 2010 and then add an intelligent voice assistant to it in 2011. The iPhone 4 was the first big resigned iPhone, but it was the 4S that stole the show since it included the snarky AI, Siri. The voice assistant promised to help users with appointments, calls, quick searches and fun facts. </p>
+                                    </div>
+                            </div>
+                            <!-- <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="" alt="logo image">
+                                        <p style="flex-wrap: wrap;">  </p>
+                                    </div>
+                            </div> -->
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2011: The Cloud  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <!-- <img style="width: 500px;  height:300px ; " src="" alt="logo image"> -->
+                                        <p style="flex-wrap: wrap;"> Losing your gadget no longer meant you'd lose your data. When Apple announced the iCloud, an online media storage system, people were able to backup all their files to "the cloud" they could access from other devices whenever they wanted.  </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2013-2014 Milestones </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/MFDUJERNIN33LCAPXQPR3N5DTI.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;">"Monkey Drums" by Chase Buch becomes iTunes' 25 billionth purchased song. The song was downloaded in February 2013 by a man in Germany. Because of his lucky timing, the man received a 10,000-Euro iTunes gift card.
+
+                                            Then in May 2013, the company had its 50 billionth downloaded application from the App store. The 50 billionth app was "Say the Same Thing" and it was downloaded by a man in Ohio, who also received a $10,000 gift card.
+                                            
+                                            Apple continued making history in March 2014 by selling its 500 millionth iPhone. Then on Nov. 22, 2014, the tech giant sold its one-billionth iOS device. The product was a 64GB iPhone 6 Plus.
+                                            
+                                            In between all the milestones, Apple also announced in May 2014 that it was buying Beats for $3 billion.  </p>
+                                    </div>
+                            </div>
+                            <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;"> 2016: Apple vs. FBI </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="./apple-data/A37NS3EO5CMEHIYKWHCMXSAQQ4.avif" alt="logo image">
+                                        <p style="flex-wrap: wrap;"> Apple became the center of attention in the U.S. in February after the FBI demanded the company unlock the encrypted iPhone of the San Bernardino shooter. Apple refused to create a "backdoor" claiming that the one-time break-in would be "bad for America." Cook said he personally refused to hack into the phone because he wants to protect people's safety and data.
+
+                                            The court was then dropped on March 28 after the FBI managed to find a way into the locked phone. </p>
+                                    </div>
+                            </div>
+                            
+                        
+                            
+                            <!-- <div class="appleDataContent">
+                                <h2 style="flex-wrap: wrap;">  </h2>
+                                
+                                    <div class="teslaDataContentarticle">
+                                        <img style="width: 500px;  height:300px ; " src="" alt="logo image">
+                                        <p style="flex-wrap: wrap;">  </p>
+                                    </div>
+                            </div> -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="financeContent">
+                        <p> financeContent </p>
+                    </div>
+
+
+                    <div class="companyNewesContent">
+                        <p> companyNewesContent </p>
+                    </div>
+
+                    <div class="testModelContent">
+                        <p> testModelContent </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- end  content  -->
+        
+    </div>
+    
+    <div  class="offcanvas offcanvas-start  " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <li>
+            <nav class="navbar navbar-light  ">
+                <div class="container-fluid">
+                    <form class="d-flex  w-100">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </li>
+        <div class="offcanvas-header">
+            
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">sidebar</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <ul class="  list-none  ">
+                <li>
+                    <a  class="   d-flex  align-center  space-between  fs-20     rad-6  p-10 " href="index.html" >  
+                        <i class="fa-solid fa-chart-simple  fa-fw"></i>
+                        <span class="" > Dashboard </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class=" d-flex  align-center space-between  fs-20    rad-6  p-10 " href="setting.html" >  
+                        <i class="fa-solid fa-gear fa-fw "> </i>
+                        <span class="   d-flex" > Setting </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20   space-between   rad-6  p-10 " href="profile.html" >  
+                        <i class="fa-regular fa-user  fa-fw"></i>
+                        <span class=""> Profile </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20   space-between   rad-6  p-10 " href="companys.html" >  
+                        <i class="fa-regular fa-building"></i>
+                        <span class="" > Companys </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20  space-between    rad-6  p-10 " href="LastNews.html" >  
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span class="" > LastNews </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class=" active  d-flex  align-center  fs-20   space-between   rad-6  p-10 " href="Trending.html" >  
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <span class="" > Trending </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="  d-flex  align-center  fs-20   space-between   rad-6  p-10 " href="Chart.html" >  
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span class="" > Chart </span>
+                    </a>
+                </li>
+                <li>
+                    <a  class="   d-flex  align-center  fs-20   space-between   rad-6  p-10 " href="Community.html" >  
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span class="" > Education Com </span>
+                    </a>
+                </li>
+
+
+
+                
+            </ul>
+            
+          </div>
+          
+          
+        </div>
+      </div>
+
+    <!--  start footer -->
+    <div  class= "footer  mt-5  pt-5 pb-5  text-center   bg-black  text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="info mb-5">
+                        <img src="./images/logo (1)/logo/logo.png" class="mb-4" alt="">
+                        <p class="mb-4 c-gray">
+                            Hi! Welcome to our website we are happy to help you to learn about 
+                            Finance and to provide you with best preditcion stocs algorithms.
+                        </p>
+                        <div class="copyright c-gray">
+                            Created By <span class=>  ahmedsalehbasuony </span>
+                            <div> &copy; <span> 2023 -  FinTec   </span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="liks">
+                        <h5 class="text-light">  LINKS </h5>
+                        <ul class="list-unstyled lh-lg c-gray">
+                            <li> <a  href="index.html" class="c-gray"> Home </a>   </li>
+                            <li> <a href="companys.html" class="c-gray"> Our Services </a>  </li>
+                            <li> <a href="profile.html"  class="c-gray">   Portfolio </a></li>
+                            <li><a href="Chart.html"  class="c-gray"> Chart </a></li>
+                            <li > <a href="setting.html"  class="c-gray"> Support </a></li>
+                            <li > <a href="LastNews.html"  class="c-gray"> Newes </a></li>
+                            <li > <a href="Trending.html"  class="c-gray"> Trending </a></li>
+                            <li > <a href="Community.html"  class="c-gray"> Learn ! </a></li>
+                            <li>Terms and Condition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <div class="links">
+                        <h5 class="text-light"> About Us </h5>
+                        <ul class="list-unstyled  lh-lg c-gray">
+                            <li>  <a href="sign_in.html" class="c-gray">  Sign In  </a></li>
+                            <li> <a href="sign_up.html" class="c-gray"> Register</a></li>
+                            <li>  <a href="abouus.html" class="c-gray"> About Us </a></li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="contact">
+                        <h5 class="text-light"> Contact Us </h5>
+                        <p class="lh-lg mt-3 mb-5  c-gray"> Get in touch with us via mail phone.We are waiting for your call or message </p>
+                    
+                        <a href="#" class="btn rounded-pill main-btn   c-gray  w-100"> graphberry@gmail.com </a>
+                        <ul class="d-flex  mt-5  list-unstyled  gap-3">
+                                <li>
+                                    <a class="d-block text-light" href="#"
+                                    ><i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#"
+                                    ><i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#"
+                                    ><i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="d-block text-light" href="#"
+                                    ><i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i
+                                    ></a>
+                                </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--  end footer -->
+
+        
+    <!-- link to java-script file  -->
+
+    <!--  api links  -->
+    <script src="./Api/AppleApi.js"></script> 
+    
+    <!--- <script src="./Api/CIBApi.js"></script>
+    <script src="./Api/GoogleApi.js"></script>
+    <script src="./Api/TESLAApi.js"></script>
+    <script src="./Api/MICROSOFTApi.js"></script>
+    <script src="./Api/METAApi.js"></script>
+    <script src="./Api/AmazonApi.js"></script>
+    <script src="./Api/CIBApi.js"></script>
+    <script src="./Api/ELSWEDAYApi.js"></script>
+    <script src="./Api/WEApi.js"></script>
+
+    -->
+    
+
+    <script src="./Java-script/companydataonclick.js"></script>
+    <script src="./Java-script/companyContent.js"></script>
+    <script src="./Java-script/community.js"></script>
+    <script src="./Java-script/upbotton.js"></script>
+    <!---
+    <script src="./Java-script/Translation.js"></script> -->
+    <script src="./Java-script/main.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>
